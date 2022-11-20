@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+
+{% block content_block %}
+<h2>Login</h2>
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="phone_number" placeholder="Phone Number"> </input>
+    <input type="password" name="password" placeholder="Password"> </input>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    
+{% endblock content_block %}
